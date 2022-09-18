@@ -2,7 +2,13 @@
 #include <bitset>
 #include <limits>	
 
-using namespace std;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::hex;
+using std::numeric_limits;
+using std::string;
+using std::bitset;
 
 int main() {
 											//Lab1_DataTypes by Gerasenkov Ilya zzz
@@ -49,5 +55,4 @@ int main() {
 	cin >> ls >> rs;
 	double mid = (ls + rs) / 2;
 	cout << "The middle of the segment is at the point: " << mid << endl << endl;
-
 }
