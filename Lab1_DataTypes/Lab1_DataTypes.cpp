@@ -43,8 +43,8 @@ int main() {
 	int a, b;
 	cout << "Enter a and b (a * x = b): ";
 	cin >> a >> b;
-	cout << double(a) << " * x = " << double(b) << endl;
-	cout << "x = " << double(b) << " / " << double(a) << endl;
+	cout << std::dec << a << " * x = " << b << endl;
+	cout << "x = " << b << " / " << a << endl;
 	double res = double(b) / a;
 	cout << "x = " << res << endl;
 	cout << "Result: " << res << endl << endl;
@@ -53,6 +53,6 @@ int main() {
 	cout << "Enter the coordinates of the ends of the line segment: ";
 	int ls, rs;
 	cin >> ls >> rs;
-	double mid = (ls + rs) / 2;
+	double mid = double(ls + rs) / 2;
 	cout << "The middle of the segment is at the point: " << mid << endl << endl;
 }
