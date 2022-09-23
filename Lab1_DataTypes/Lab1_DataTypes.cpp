@@ -32,8 +32,7 @@ int main() {
 	int num;
 	cout << "Enter your number: ";
 	cin >> num;
-	string bin_num = bitset<32>(num).to_string();
-	cout << "Binary num: " << bin_num << endl;
+	cout << "Binary num: " << bitset<8 * sizeof(num)>(num) << endl;
 	cout << "Hex num: " << hex << num << endl;
 	cout << "Bool: " << bool(num) << endl;
 	cout << "Double: " << double(num) << endl;
